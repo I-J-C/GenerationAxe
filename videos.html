@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+Created by Malgorzata Kucwaj
+NavBar and Footer by Ilka Jessie Collado
+May 2020
+-->
+<html>
+    <head>
+        <title>Generation Axe | Videos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+		<link rel="shortcut icon" type="image/x-icon" href="img/guitar.ico" />
+        <!--NAV BAR-->
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://kit.fontawesome.com/e05f4d08a0.js" crossorigin="anonymous"></script>
+		 <link rel="stylesheet" type="text/css" href="css/video.css">
+    </head>
+    <body>
+		<!--NAV BAR FOR ALL PAGES-->
+    <div class="navContainer">
+        <!-- Hamburger Menu -->
+        <div id="hamburger" class="hamburger">
+            <a href="#" class="icon" onclick="hamburgerMenu()">
+                <i id="hamburgerToggle" class="fas fa-bars"></i>
+            </a>
+        </div>
+        <!-- Nav Bar -->
+        <div id="navLogo">
+            <a href="home.html"><img class="navLogo" src="img/logoe.jpg" alt="Generation Axe Logo"></a>
+        </div>
+        <div id="nav" class="nav">
+            <ul class="navBar">
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn" href="#" onclick="dropdownGuitaristsNav()">GUITARISTS <i id="dropdownToggleG" class="fas fa-caret-down"></i></a>
+                        <div id="dropdown-contentG" class="dropdown-content">
+                            <a href="vai.html">Vai</a>
+                            <a href="malmsteen.html">Malmsteen</a>
+                            <a href="wylde.html">Wylde</a>
+                            <a href="bettencourt.html">Bettencourt</a>
+                            <a href="abasi.html">Abasi</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="tour.html">TOUR</a></li>
+                <li><a href="https://generationaxe.myshopify.com/" target="_blank">MERCH</a></li>
+
+                <li>
+                    <div class="dropdown"><a class="dropbtn" href="#" onclick="dropdownMediaNav()">MEDIA <i id="dropdownToggleM" class="fas fa-caret-down"></i></a>
+                        <div id="dropdown-contentM" class="dropdown-content">
+                            <a href="videos.html">Videos</a>
+                            <a href="photos.html">Photos</a>
+                            <a href="interviews.html">Interviews</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--END NAV BAR-->
+
+        <div class="container">
+            
+     
+            <div class="mainImage">
+                <h1>Videos</h1>
+            </div>    
+			
+            
+
+            <div class="row1-col1"> 
+			<br>
+               <iframe class="shadow" width="560" height="315" src="https://www.youtube.com/embed/sjHrpMi2gm8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="row1-col2">
+			<br> 
+               <iframe class="shadow" width="560" height="315" src="https://www.youtube.com/embed/KnZC3ezX8vQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="row1-col3"> 
+			<br>
+               <iframe class="shadow" width="560" height="315" src="https://www.youtube.com/embed/7BVFOHhyxPM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>  
+			<div class="row2-col1"> 
+			
+                <iframe class="shadow" width="560" height="315" src="https://www.youtube.com/embed/AxNOpvXh63I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="row2-col2"> 
+			
+                <iframe class="shadow" width="560" height="315" src="https://www.youtube.com/embed/5CbTQjngjio"></iframe>
+            </div>
+            <div class="row2-col3"> 
+			
+                <iframe class="shadow" width="560" height="315" src="https://www.youtube.com/embed/sKY_GpwMEK4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+            </div>  
+         
+             
+         
+    <!-- closing tag for the container! -->	 
+    </div>
+	
+	 <!--FOOTER FOR ALL PAGES-->
+    <footer>
+        <div class="socialMedia">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/generationaxetour/" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/generationaxe/?hl=en" target="_blank">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Generation_Axe/" target="_blank">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/artist/4IVXzZW6i9KIcpeP29Y1Df" target="_blank">
+                        <i class="fab fa-spotify"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">&copy; 2020 GENERATION AXE</div>
+    </footer>
+    <!--END FOOTER-->
+	
+	<!-- JS for navbar!-->
+	<script src="js/nav.js" type="text/javascript"></script>
+    </body>
+</html>

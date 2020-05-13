@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+Created by Shiloh Martin-Adam
+NavBar and Footer by Ilka Jessie Collado
+May 2020
+-->
+
+<html>
+
+<head>
+    <title>GA Yngwie Malmsteen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/cssaxe.css">
+    <link rel="shortcut icon" href="image/guitar_icon.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+    <!-- guitar icon from kindpng.com -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e05f4d08a0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--NAV BAR FOR ALL PAGES-->
+    <div class="navContainer">
+        <!-- Hamburger Menu -->
+        <div id="hamburger" class="hamburger">
+            <a href="#" class="icon" onclick="hamburgerMenu()">
+                <i id="hamburgerToggle" class="fas fa-bars"></i>
+            </a>
+        </div>
+        <!-- Nav Bar -->
+        <div id="navLogo">
+            <a href="home.html"><img class="navLogo" src="img/logoe.jpg" alt="Generation Axe Logo"></a>
+        </div>
+        <div id="nav" class="nav">
+            <ul class="navBar">
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn" href="#" onclick="dropdownGuitaristsNav()">GUITARISTS <i id="dropdownToggleG" class="fas fa-caret-down"></i></a>
+                        <div id="dropdown-contentG" class="dropdown-content">
+                            <a href="vai.html">Vai</a>
+                            <a href="malmsteen.html">Malmsteen</a>
+                            <a href="wylde.html">Wylde</a>
+                            <a href="bettencourt.html">Bettencourt</a>
+                            <a href="abasi.html">Abasi</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="tour.html">TOUR</a></li>
+                <li><a href="https://generationaxe.myshopify.com/" target="_blank">MERCH</a></li>
+                <li>
+                    <div class="dropdown"><a class="dropbtn" href="#" onclick="dropdownMediaNav()">MEDIA <i id="dropdownToggleM" class="fas fa-caret-down"></i></a>
+                        <div id="dropdown-contentM" class="dropdown-content">
+                            <a href="photos.html">Photos</a>
+                            <a href="videos.html">Videos</a>
+                            <a href="interviews.html">Interviews</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--END NAV BAR-->
+
+
+
+    <div class="bandNameBar">
+        <!-- h1 -->
+        Yngwie Malmsteen
+        <!-- /h1-->
+    </div>
+    <div class="artistImage">
+        <img src="image/malmsteen3.jpg" alt="Yngwie Malmsteen" />
+    </div>
+    <div class="artistBio">
+        <p>Yngwie Malmsteen is a Swedish guitarist, songwriter and bandleader. Malmsteen first became known in the 1980s for his neoclassical metal playing style in heavy metal, and has released 20 studio albums in a career spanning almost 40 years. In 2009,
+            Time magazine rated Malmsteen as among the 10 greatest electric guitar players of all time.
+        </p>
+    </div>
+    <div class="artistLinks">
+        <a href="https://www.yngwiemalmsteen.com/" target="_blank" />Website</a>
+        |
+        <a href="https://www.facebook.com/officialyngwiemalmsteen/" target="_blank">Facebook</a> |
+        <a href="https://twitter.com/OfficialYJM" target="_blank">Twitter</a>
+    </div>
+    <div class="artistLesson">
+        <br/> Video: Yngwie Malmsteen - Insanely Amazing Guitar Solos
+        <br/>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9RuWcMC3dYA"></iframe>
+        <br/>
+    </div>
+    <div class="artistLesson">
+        <br/> Video: Yngwie Malmsteen Guitar Rig Tour
+        <br/>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_xu7W7wCBQw"></iframe>
+        <br/>
+    </div>
+    <br/>
+    <div class="returnGenAxe">
+        <a href="home.html">more GENERATION AXE</a>
+    </div>
+
+    <!--FOOTER FOR ALL PAGES-->
+    <footer>
+        <div class="socialMedia">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/generationaxetour/" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/generationaxe/?hl=en" target="_blank">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Generation_Axe/" target="_blank">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/artist/4IVXzZW6i9KIcpeP29Y1Df" target="_blank">
+                        <i class="fab fa-spotify"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="copyright">&copy; 2020 GENERATION AXE</div>
+    </footer>
+    <!--END FOOTER-->
+
+    <script src="js/nav.js" type="text/javascript"></script>
+
+</body>
+
+</html>

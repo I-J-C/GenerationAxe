@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+Created by Malgorzata Kucwaj
+NavBar and Footer by Ilka Jessie Collado
+May 2020
+-->
+<html>
+    <head>
+        <title>Generation Axe</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="img/guitar.ico" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">    
+		
+		<!--nav bar-->
+		<!--Copy These into Header of all pages-->
+    
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+ 
+       <link href="css/home.css" rel="stylesheet" type="text/css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e05f4d08a0.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+
+
+    <div class="navContainer">
+        <div id="hamburger" class="hamburger">
+            <a href="#" class="icon" onclick="hamburgerMenu()">
+                <i id="hamburgerToggle" class="fas fa-bars"></i>
+            </a>
+        </div>
+
+        <div id="navLogo">
+            <a href="home.html"><img class="navLogo" src="img/logoe.jpg" alt="Generation Axe Logo"></a>
+        </div>
+        <div id="nav" class="nav">
+            <ul class="navBar">
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn" href="#" onclick="dropdownGuitaristsNav()">GUITARISTS <i id="dropdownToggleG" class="fas fa-caret-down"></i></a>
+                        <div id="dropdown-contentG" class="dropdown-content">
+                            <a href="vai.html">Vai</a>
+                            <a href="malmsteen.html">Malmsteen</a>
+                            <a href="wylde.html">Wylde</a>
+                            <a href="bettencourt.html">Bettencourt</a>
+                            <a href="abasi.html">Abasi</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="tour.html">TOUR</a></li>
+                <li><a href="https://generationaxe.myshopify.com/" target="_blank">MERCH</a></li>
+
+                <li>
+                    <div class="dropdown"><a class="dropbtn" href="#" onclick="dropdownMediaNav()">MEDIA <i id="dropdownToggleM" class="fas fa-caret-down"></i></a>
+                        <div id="dropdown-contentM" class="dropdown-content">
+                            <a href="videos.html">Videos</a>
+                            <a href="photos.html">Photos</a>
+                            <a href="interviews.html">Interviews</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+	
+		<div class="gridContainer">
+
+		
+		<div class="starPic1" onClick="javascript:window.open('bettencourt.html', '_self'); "></div>
+		<div class="starPic2" onClick="javascript:window.open('malmsteen.html', '_self'); "></div>
+		<div class="starPic3" onClick="javascript:window.open('vai.html', '_self'); "></div>
+		<div class="starPic4" onClick="javascript:window.open('wylde.html', '_self'); "></div>
+		<div class="starPic5" onClick="javascript:window.open('abasi.html', '_self'); "></div>
+		
+			<div class="starName1"><a href="bettencourt.html">Nuno <br>Bettencourt</a></div>
+                <div class="starName2"><a href="malmsteen.html">Yngwie <br>Malmsteen</a></div>
+                <div class="starName3"><a href="vai.html">Steve <br>Vai</a></div>
+                <div class="starName4"><a href="wylde.html">Zakk <br>Wylde</a></div>
+                <div class="starName5"><a href="abasi.html">Tosin <br>Abasi</a></div>
+		
+		
+		
+		<div class="bio">
+		
+		<p>
+		A unique performance of five fiercely talented guitar players coming together to create a 6-string extravaganza that is sure to amaze and delight
+		</p>
+		</div>
+		
+		<div class="stagePic"></div>
+		
+		<div class="albumBlurb">Album <br>&dArr; Out Now &dArr;</div>
+		<div class="album"></div>
+		
+		
+		<div class="albumLinks">
+		<a href="https://www.amazon.com/Guitars-That-Destroyed-World-China/dp/B07Q3BX313/ref=tmm_msc_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank"><img src="img/amazon2.png"></a>
+		<a href="https://play.google.com/store/music/album/Generation_Axe_The_Guitars_That_Destroyed_the_Worl?id=Bi2hnl3zrnsmkkhajvttdizjutq" target="_blank"><img src="img/google2.png"></a>
+		<a href="https://music.apple.com/us/album/the-guitars-that-destroyed-the-world-live-in-china/1458052618" target="_blank"><img src="img/itunes.png"></a>
+		<a href="https://open.spotify.com/artist/4IVXzZW6i9KIcpeP29Y1Df" target="_blank"><img src="img/spotify.png"></a>
+		
+		
+		
+		</div>
+		
+		</div>
+		
+
+    <footer>
+        <div class="socialMedia">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/generationaxetour/" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/generationaxe/?hl=en" target="_blank">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Generation_Axe/" target="_blank">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/artist/4IVXzZW6i9KIcpeP29Y1Df" target="_blank">
+                        <i class="fab fa-spotify"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="copyright">&copy; 2020 GENERATION AXE</div>
+    </footer>
+
+		
+		<script src="js/nav.js" type="text/javascript"></script>
+		
+    </body>
+</html>
