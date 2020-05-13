@@ -1,0 +1,294 @@
+/*
+Author: Ilka Collado
+
+Supported files: tours.html
+*/
+
+@font-face {
+    font-family: batman_forever;
+    src: url('../font/batmfa__.ttf');
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: /* top, transparent gray, faked with solid gradient */
+    linear-gradient( rgba(34, 34, 34, 0.45), rgba(34, 34, 34, 0.45)), /* bottom, image */
+    url('../img/tourBG.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+h1 {
+    margin: 5vh;
+    font-size: 4em;
+    color: goldenrod;
+    text-align: center;
+    font-family: batman_forever, Roboto, sans-serif;
+    text-shadow: black 2px 2px;
+}
+
+h2 {
+    color: goldenrod;
+    text-align: left;
+    padding-bottom: 1vh;
+    font-family: batman_forever, Roboto, sans-serif;
+}
+
+.announcement {
+    background-color: rgba(34, 34, 34, 0.8);
+    padding: 1vh;
+    margin-top: 5vh;
+}
+
+.content {
+    min-height: 75vh;
+    padding: 3%;
+}
+
+
+/*Image Styles*/
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center center;
+    margin-bottom: 10vh;
+    margin-left: 10vh;
+}
+
+.column {
+    width: 45vh;
+    height: 50vh;
+    padding: 2vh;
+}
+
+.img {
+    max-width: 40vh;
+    border-radius: 50%;
+}
+
+.images {
+    margin-top: 5vh;
+}
+
+
+/*Button Styles*/
+
+button {
+    font-family: batman_forever, Roboto, sans-serif;
+    font-size: 1em;
+    background-color: #222;
+    border: 1px solid goldenrod;
+    color: goldenrod;
+    padding: 1vh;
+    margin-top: 1vh
+}
+
+button:hover,
+.button:hover {
+    color: white;
+    cursor: pointer;
+}
+
+button a:link,
+button a:visited {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+
+/*Table Styles*/
+
+.table {
+    border-bottom: goldenrod 1px solid;
+    width: 100%;
+    margin-top: 5vh;
+}
+
+table {
+    display: none;
+    width: 100%;
+    padding-bottom: 2vh;
+}
+
+th {
+    font-family: batman_forever, Roboto, sans-serif;
+    padding-bottom: 1vh;
+}
+
+td {
+    padding-top: 2vh;
+    border-bottom: 1px solid #ddd;
+    vertical-align: bottom;
+}
+
+tr {
+    vertical-align: bottom;
+}
+
+td:nth-of-type(1) {
+    width: 20%;
+}
+
+td:nth-of-type(2) {
+    width: 40%;
+}
+
+td:nth-of-type(3) {
+    width: 35%;
+}
+
+tr:last-of-type td {
+    border: none;
+}
+
+
+/* The Modal (background) */
+
+
+/*Modal information from W3Schools*/
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modalDropdown:hover {
+    cursor: pointer;
+    color: white;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #111;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button */
+
+.closeModal {
+    color: goldenrod;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeModal:hover,
+.closeModal:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .content {
+        padding: 3%;
+    }
+    .row {
+        flex-direction: column;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+    /*Table Styles*/
+    tr {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    tbody {
+        width: 100%;
+    }
+    thead,
+    tbody,
+    th,
+    td {
+        display: block;
+        flex: 100%;
+    }
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr {
+        margin: 0 0 1rem 0;
+    }
+    tr:nth-child(odd) {
+        background: #666;
+    }
+    tr:last-of-type td {
+        border-bottom: 1px solid #333;
+    }
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #333;
+        position: relative;
+        padding-left: 50%;
+    }
+    td:nth-of-type(1) {
+        width: 49%;
+    }
+    td:nth-of-type(2) {
+        width: 49%;
+    }
+    td:nth-of-type(3) {
+        width: 49%;
+    }
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 0;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+    td:nth-of-type(1):before {
+        content: "Date: ";
+        font-family: batman_forever, sans-serif;
+    }
+    td:nth-of-type(2):before {
+        content: "Venue: ";
+        font-family: batman_forever, sans-serif;
+    }
+    td:nth-of-type(3):before {
+        content: "City: ";
+        font-family: batman_forever, sans-serif;
+    }
+}

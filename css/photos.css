@@ -1,0 +1,269 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+Created by Malgorzata Kucwaj
+May 2020
+*/
+@font-face {
+    font-family: batman_forever; 
+	src: url('../font/batmfa__.ttf'); }
+
+body {
+     margin: 0;
+	 background-image: url(../img/bgblurcropped.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-color: #222;
+}
+
+
+.container {
+    display: grid;
+    position: relative;
+    grid-template-columns:20px 30px 1fr 1fr 1fr 30px 20px;
+    grid-template-rows: auto auto 450px 450px auto auto 30px 40px; 
+    justify-content: space-evenly;
+    /* place-items: center center;*/
+    /*align-content:center;*/    
+    /*grid-gap: 10px;*/   
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    font-family: batman_forever, sans-serif;
+}
+
+.imgBox{
+    place-items: center center;
+    width: 95%;
+    height: auto;
+    border: 10px solid #000;
+    z-index: -1;
+}
+
+.mainImage {
+    grid-column-start:1;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-image: url(../img/livebgcrop2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.mainImage h1{
+    z-index: 10; 
+    color: white;
+    -webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+    text-align: center;
+    font-size: 4em;
+    font-family: batman_forever, sans-serif;
+	margin-top: 20vh;
+	
+}
+
+#homePage{
+    margin-top: 500px;
+}
+
+
+#transparent {
+    font-family: batman_forever, sans-serif;
+    color: aaa;
+    background-color: rgba(255,255,255,.6);
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0px;
+    z-index: 2;
+    width: 100%;
+    margin-top: 100px;
+    padding: 15px;
+}
+
+.h1{
+        color: rgba(255,255,255,.7);
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #213c08;
+}
+
+
+.container a:link, button a:visited{
+    display: block;
+    text-decoration: none;
+}
+
+.mainContent {
+    grid-column-start:3;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.mainContent h1 {
+    font-family: Candara, georgia, sans-serif;
+    font-style: italic;
+    font-size: xlarge;
+    color: #7cae4d;
+    
+
+}
+.mainContent h2 {
+    font-family: Candara, georgia, sans-serif;
+    font-size: large;
+    color: #395c18;
+}
+
+.mainContent p{
+    font-family: Candara, georgia, sans-serif;
+    font-size: large;
+    color: #395c18;
+}
+
+#goBack {
+    color: #395c18;
+    font-weight: bold;
+}
+
+
+
+/*** Grid **/
+.row1-col1 {
+    grid-column-start:3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    /*justify-self: center;*/
+    /*justify-items: center;*/
+    /* background-image: url(img/adventure.jpg); 
+     background-repeat: no-repeat;
+     background-position: center;*/
+
+}
+.row1-col2 {
+    grid-column-start:4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+
+}
+.row1-col3 {
+    grid-column-start:5;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+
+}
+
+.row2-col1 {
+    grid-column-start:3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+
+
+}
+.row2-col2 {
+    grid-column-start:4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+
+}
+.row2-col3 {
+    grid-column-start:5;
+    grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 6;
+
+}
+.row3-col1 {
+    grid-column-start:3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+
+
+}
+.row3-col2 {
+    grid-column-start:4;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 7;
+
+}
+.row3-col3 {
+    grid-column-start:5;
+    grid-column-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+
+/*Gallery CSS*/
+
+.gallery {
+    grid-column-start:1;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 8; 
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 33.3%;
+  max-width: 33.3%;
+}
+.border {
+  border-left: solid white 2px;
+  border-right: solid white 2px;
+  border-top: solid white 4px;
+  border-bottom: solid white 0px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.border:hover {
+opacity: 0.8;
+}
+
+.column .border img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .navLogo {
+width: 50vw;
+}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .navLogo {
+width: 45vw;
+}
+.container {
+display: flex;
+flex-direction: column;
+grid-template-rows: auto auto 100px 450px 450px auto auto; 
+}
+}

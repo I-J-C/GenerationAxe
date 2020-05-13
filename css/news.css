@@ -1,0 +1,82 @@
+/*
+Author: Ilka Collado
+
+Supported files: news.html
+*/
+
+@font-face {
+    font-family: batman_forever;
+    src: url('../font/batmfa__.ttf');
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: /* top, transparent gray, faked with solid gradient */
+    linear-gradient( rgba(34, 34, 34, 0.45), rgba(34, 34, 34, 0.45)), /* bottom, image */
+    url('../img/newsBG.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center center;
+    margin-bottom: 10vh;
+    margin-left: 10vh;
+}
+
+.column {
+    flex: 50%;
+    padding: 2vh;
+}
+
+.embed {
+    margin-left: 15vh;
+}
+
+.text-content {
+    background-color: rgba(34, 34, 34, 0.8);
+}
+
+h1 {
+    margin: 5vh;
+    font-size: 4em;
+}
+
+h1,
+h2 {
+    color: goldenrod;
+    text-align: center;
+    font-family: batman_forever, Roboto, sans-serif;
+}
+
+p {
+    font-family: Roboto, sans-serif;
+    font-weight: regular;
+}
+
+@media (max-width: 767px) {
+    .row {
+        flex-direction: column;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+    .content {
+        padding: 3%;
+        align-self: center;
+    }
+    .embed {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,174 @@
+/* 
+    Created on : Jan 24, 2020, 10:25:44 PM
+    Author     : tduffy
+*/
+.gridContainer{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: min-content;
+}
+body{
+    margin: 0;
+}
+
+.colStart1{
+    grid-column-start: 1;
+}
+.colStart2{
+    grid-column-start: 2;
+}
+.colStart3{
+    grid-column-start: 3;
+}
+.colStart4{
+    grid-column-start: 4;
+}
+.colStart5{
+    grid-column-start: 5;
+}
+.colStart6{
+    grid-column-start: 6;
+}
+.colStart7{
+    grid-column-start: 7;
+}
+.colStart8{
+    grid-column-start: 8;
+}
+.colStart9{
+    grid-column-start: 9;
+}
+.colStart10{
+    grid-column-start: 10;
+}
+.colStart11{
+    grid-column-start: 11;
+}
+.colStart12{
+    grid-column-start: 12;
+}
+/* 
+    Add more rows as needed 
+*/
+.rowStart1{
+    grid-row-start: 1;
+}
+.rowStart2{
+    grid-row-start: 2;
+}
+.rowStart3{
+    grid-row-start: 3;
+}
+.rowStart4{
+    grid-row-start: 4;
+}
+.rowStart5{
+    grid-row-start: 5;
+}
+.rowStart6{
+    grid-row-start: 6;
+}
+.rowStart7{
+    grid-row-start: 7;
+}
+.rowStart8{
+    grid-row-start: 8;
+}
+.rowStart9{
+    grid-row-start: 9;
+}
+.rowStart10{
+    grid-row-start: 10;
+}
+.rowStart11{
+    grid-row-start: 11;
+}
+.rowStart12{
+    grid-row-start: 12;
+}
+/* 
+    As the grid expands, add span styles as needed 
+*/
+.colSpanAuto{
+    grid-column-end: auto;
+}
+.colSpan2{
+    grid-column-end: span 2;
+}
+.colSpan3{
+    grid-column-end: span 3;
+}
+.colSpan4{
+    grid-column-end: span 4;
+}
+.colSpan5{
+    grid-column-end: span 5;
+}
+.colSpan6{
+    grid-column-end: span 6;
+}
+.colSpan7{
+    grid-column-end: span 7;
+}
+.colSpan8{
+    grid-column-end: span 8;
+}
+.colSpan9{
+    grid-column-end: span 9;
+}
+.colSpan10{
+    grid-column-end: span 10;
+}
+.colSpan11{
+    grid-column-end: span 11;
+}
+.colSpan12{
+    grid-column-end: span 12;
+}
+.rowSpanAuto{
+    grid-row-end: auto;
+}
+.rowSpan2{
+    grid-row-end: span 2;
+}
+.rowSpan3{
+    grid-row-end: span 3;
+}
+.rowSpan4{
+    grid-row-end: span 4;
+}
+.rowSpan5{
+    grid-row-end: span 5;
+}
+.rowSpan6{
+    grid-row-end: span 6;
+}
+.rowSpan7{
+    grid-row-end: span 7;
+}
+.rowSpan8{
+    grid-row-end: span 8;
+}
+.rowSpan9{
+    grid-row-end: span 9;
+}
+.rowSpan10{
+    grid-row-end: span 10;
+}
+.rowSpan11{
+    grid-row-end: span 11;
+}
+.rowSpan12{
+    grid-row-end: span 12;
+}
+/* responsive layout - default to 1 column for medium viewports and less */
+@media only screen and (max-width: 769px) {
+    .gridContainer{
+        display: flex;
+        flex-direction: column;
+    }
+}

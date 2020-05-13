@@ -1,0 +1,440 @@
+/* 
+    Created on : Apr 22, 2020, 9:52:17 AM
+    Author     : M. Kucwaj
+	Grid partially based on T. Duffy's responsive grid
+*/
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #222;
+}
+
+@font-face {
+    font-family: batman_forever; 
+	src: url('../font/batmfa__.ttf'); 
+}	
+
+.starPic1 {
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 2;
+grid-row-end: 3;
+background-image: url(../img/star1.jpg);
+background-size: cover;
+background-position: center;
+cursor: pointer;
+}	
+
+.starPic2 {
+grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 2;
+grid-row-end: 3;
+background-image: url(../img/star2.jpg);
+background-size: cover;
+background-position: center;
+cursor: pointer;
+}	
+
+.starPic3 {
+grid-column-start: 3;
+grid-column-end: 4;
+grid-row-start: 2;
+grid-row-end: 3;
+background-image: url(../img/star3.jpg);
+background-size: cover;
+background-position: center;
+cursor: pointer;
+}	
+
+.starPic4 {
+grid-column-start: 4;
+grid-column-end: 5;
+grid-row-start: 2;
+grid-row-end: 3;
+background-image: url(../img/star4.jpg);
+background-size: cover;
+background-position: center;
+cursor: pointer;
+}	
+
+.starPic5 {
+grid-column-start: 5;
+grid-column-end: 6;
+grid-row-start: 2;
+grid-row-end: 3;
+background-image: url(../img/star5.jpg);
+background-size: cover;
+background-position: center;
+cursor: pointer;
+}	
+
+.starName1 {
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 3;
+grid-row-end: 4;
+font-family: batman_forever;
+color: #cc5500;
+font-size: 1.8em;
+text-align: center;
+padding: 5px;
+background: #222;
+}
+
+.starName2 {
+grid-column-start: 2;
+grid-column-end: 3;
+grid-row-start: 3;
+grid-row-end: 4;
+font-family: batman_forever;
+color: #cc5500;
+font-size: 1.8em;
+text-align: center;
+padding: 5px;
+background: #222;
+}
+
+.starName3 {
+grid-column-start: 3;
+grid-column-end: 4;
+grid-row-start: 3;
+grid-row-end: 4;
+font-family: batman_forever;
+color: #cc5500;
+font-size: 1.8em;
+text-align: center;
+padding: 5px;
+background: #222;
+}
+
+.starName4 {
+grid-column-start: 4;
+grid-column-end: 5;
+grid-row-start: 3;
+grid-row-end: 4;
+font-family: batman_forever;
+color: #cc5500;
+font-size: 1.8em;
+text-align: center;
+padding: 5px;
+background: #222;
+}	
+
+.starName5 {
+grid-column-start: 5;
+grid-column-end: 6;
+grid-row-start: 3;
+grid-row-end: 4;
+font-family: batman_forever;
+color: #cc5500;
+font-size: 1.8em;
+text-align: center;
+padding: 5px;
+background: #222;
+}
+
+.starName1 a, .starName2 a, .starName3 a, .starName4 a, .starName5 a {
+background-color: #222;
+color: #cc5500;
+text-decoration: none;
+}
+
+.starName1 a:hover, .starName2 a:hover, .starName3 a:hover, .starName4 a:hover, .starName5 a:hover {
+transition: 0.5s;
+color: #daa520;
+
+}
+
+
+.bio {
+grid-column-start: 1;
+grid-column-end: 6;
+grid-row-start: 4;
+grid-row-end: 5;
+font-family: batman_forever;
+color: #cfcfcf;
+font-size: 1.6em;
+text-align: center;
+padding: 20px;
+background: #222;
+margin-left: 20px;
+margin-right: 20px;
+}
+
+.stagePic{
+grid-column-start: 1;
+grid-column-end: 6;
+grid-row-start: 5;
+grid-row-end: 6;
+background-image: url(../img/bgg.jpg);
+background-size: cover;
+background-position: center;
+}
+
+.albumBlurb{
+grid-column-start: 1;
+grid-column-end: 6;
+grid-row-start: 6;
+grid-row-end: 7;
+font-family: batman_forever;
+color: #222;
+font-size: 2em;
+text-align: center;
+padding: 20px;
+background: #c50;
+}
+
+.album {
+grid-column-start: 1;
+grid-column-end: 6;
+grid-row-start: 7;
+grid-row-end: 8;
+background-image: url(../img/album.jpg);
+background-size: cover;
+background-position: center;
+}
+
+.albumLinks {
+grid-column-start: 1;
+grid-column-end: 6;
+grid-row-start: 8;
+grid-row-end: 9;
+font-family: batman_forever;
+background-color: #cfcfcf;
+text-align: center;
+}
+
+.albumLinks > a {
+    display: inline-block;
+    display: -moz-inline-box;
+    *display: inline; /* For IE7 */
+    width: 24%;
+    
+}
+
+.albumLinks img {
+display: inline-block;
+max-width: 40vh;
+height: auto;
+}
+
+
+/***********************GRID******************************************/
+
+.gridContainer{
+    display: grid;
+	position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+   /* grid-template-columns: repeat(11,1fr); */
+	justify-content: space-evenly;
+    grid-auto-rows: min-content;
+	grid-template-rows:   auto 500px auto auto 500px auto 1000px auto; /*h*/
+	grid-template-columns: repeat( auto-fit, minmax(20.0%, 1fr) ); /*w*/
+}
+body{
+    margin: 0;
+}
+
+.colStart1{
+    grid-column-start: 1;
+}
+.colStart2{
+    grid-column-start: 2;
+}
+.colStart3{
+    grid-column-start: 3;
+}
+.colStart4{
+    grid-column-start: 4;
+}
+.colStart5{
+    grid-column-start: 5;
+}
+.colStart6{
+    grid-column-start: 6;
+}
+.colStart7{
+    grid-column-start: 7;
+}
+.colStart8{
+    grid-column-start: 8;
+}
+.colStart9{
+    grid-column-start: 9;
+}
+.colStart10{
+    grid-column-start: 10;
+}
+.colStart11{
+    grid-column-start: 11;
+}
+.colStart12{
+    grid-column-start: 12;
+}
+/* 
+    Add more rows as needed 
+*/
+.rowStart1{
+    grid-row-start: 1;
+}
+.rowStart2{
+    grid-row-start: 2;
+}
+.rowStart3{
+    grid-row-start: 3;
+}
+.rowStart4{
+    grid-row-start: 4;
+}
+.rowStart5{
+    grid-row-start: 5;
+}
+.rowStart6{
+    grid-row-start: 6;
+}
+.rowStart7{
+    grid-row-start: 7;
+}
+.rowStart8{
+    grid-row-start: 8;
+}
+.rowStart9{
+    grid-row-start: 9;
+}
+.rowStart10{
+    grid-row-start: 10;
+}
+.rowStart11{
+    grid-row-start: 11;
+}
+.rowStart12{
+    grid-row-start: 12;
+}
+/* 
+    As the grid expands, add span styles as needed 
+*/
+.colSpanAuto{
+    grid-column-end: auto;
+}
+.colSpan2{
+    grid-column-end: span 2;
+}
+.colSpan3{
+    grid-column-end: span 3;
+}
+.colSpan4{
+    grid-column-end: span 4;
+}
+.colSpan5{
+    grid-column-end: span 5;
+}
+.colSpan6{
+    grid-column-end: span 6;
+}
+.colSpan7{
+    grid-column-end: span 7;
+}
+.colSpan8{
+    grid-column-end: span 8;
+}
+.colSpan9{
+    grid-column-end: span 9;
+}
+.colSpan10{
+    grid-column-end: span 10;
+}
+.colSpan11{
+    grid-column-end: span 11;
+}
+.colSpan12{
+    grid-column-end: span 12;
+}
+.rowSpanAuto{
+    grid-row-end: auto;
+}
+.rowSpan2{
+    grid-row-end: span 2;
+}
+.rowSpan3{
+    grid-row-end: span 3;
+}
+.rowSpan4{
+    grid-row-end: span 4;
+}
+.rowSpan5{
+    grid-row-end: span 5;
+}
+.rowSpan6{
+    grid-row-end: span 6;
+}
+.rowSpan7{
+    grid-row-end: span 7;
+}
+.rowSpan8{
+    grid-row-end: span 8;
+}
+.rowSpan9{
+    grid-row-end: span 9;
+}
+.rowSpan10{
+    grid-row-end: span 10;
+}
+.rowSpan11{
+    grid-row-end: span 11;
+}
+.rowSpan12{
+    grid-row-end: span 12;
+}
+
+
+/****mobile**/
+@Media (max-width: 768px) {
+
+.albumLinks {
+text-align: center;
+}
+.albumLinks > a {
+    display: inline;
+    
+}
+.albumLinks img {
+max-width: 20vw;
+}
+.navContainer {
+display: block;
+position: relative;
+}
+
+.starName1, .starName2, .starName3, .starName4, .starName5   {
+font-size: 2vw;
+display: none;
+}
+	
+.bio{
+font-size: medium;
+}
+
+.stagePic {
+width: 100vw;
+}
+.albumBlurb {
+font-size: medium;
+}
+
+.gridContainer{
+	grid-template-rows: auto 250px auto auto 250px auto 350px auto; /*h*/
+}
+.navLogo {
+width: 50vw;
+}
+
+footer{
+font-size: medium;
+}
+
+
+}
