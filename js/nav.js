@@ -1,4 +1,4 @@
-//Author: Ilka Collado
+//Author: IJC
 //Supported files: nav_footer_text.html, [all front facing .html files]
 function hamburgerMenu() {
     var x = document.getElementById("nav");
