@@ -1,4 +1,4 @@
-//Author: Ilka Collado
+//Author: IJC
 //Supported file: tour.html
 
 // Get the modal
